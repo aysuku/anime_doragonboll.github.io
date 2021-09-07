@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>アニメ紹介 | お問い合わせ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrapper">
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="detail.html">アニメ詳細</a></li>
+            <li><a href="character.html">キャラクター紹介</a></li>
+            <li><a href="transforms.html">変身の種類</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <h1>お問い合わせ</h1>
+    <form>
+        <p>
+            メールが未達とならないようにドメイン制限受信をしている方は
+            「@sample.grats.jp」からのメールを受信できる設定にご変更ください
+        </p>
+        <table class="contact">
+            <tr>
+                <th><label for="yourname">お名前</label></th>
+                <td><input id="yourname" type="text" name="your-name" size="34" maxlength="20" placeholder="例：佐藤 仙"></td>
+            </tr>
+            <tr>
+                <th><label for="youremail">E-mail</label></th>
+                <td><input id="youremail" type="email" name="your-mail" size="38" maxlength="40" placeholder="例：sample@sample.grats.jp"></td>
+            </tr>
+            <tr>
+                <th><label for="yourmessage">メッセージ本文</label></th>
+                <td><textarea id="yourmessage" name="your-message" rows="8" cols="40" placeholder="例：ここにメッセージを入力してください"></textarea></td>
+            </tr>
+            <tr>
+                <th>アンケート</th>
+                <td>
+                    <div class="question">
+                        <div>
+                            <p>性別</p>
+                            <input id="male" type="radio" name="gender" value="男性"><label for="male">男性</label>
+                            <input id="female" type="radio" name="gender" value="女性"><label for="female">女性</label>
+                        </div><br />
+                        <div>
+                            <p>アンケートのなかでドラゴンボールで好きなキャラを選択してください?（複数選択可）</p>
+                            <input id="son" type="checkbox" name="like[]" value="孫悟空" checked><label for="son">孫悟空</label>
+                            <input id="bez" type="checkbox" name="like[]" value="ベジータ" ><label for="bez">ベジータ</label>
+                            <input id="song" type="checkbox" name="like[]" value="孫悟飯" ><label for="song">孫悟飯</label>
+                            <input id="kur" type="checkbox" name="like[]" value="クリリン" ><label for="kur">クリリン</label>
+                            <input id="pik" type="checkbox" name="like[]" value="ピッコロ" ><label for="pik">ピッコロ</label>
+                            <input id="ten" type="checkbox" name="like[]" value="天津飯" ><label for="ten">天津飯</label>
+                            <input id="kam" type="checkbox" name="like[]" value="亀仙人" ><label for="kam">亀仙人</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="sub_button">
+            <input class="submit_btn" type="submit" name="submit" value="入力内容を確認する">
+        </div>
+    </form>
+    <footer>
+        <small>&copy; Copyright アニメ紹介. All rights reserved.</small>
+    </footer>
+</div>
+</body>
+</html>
